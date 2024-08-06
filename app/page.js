@@ -34,7 +34,7 @@ export default function Home() {
 
     useEffect(() => {
         // Initialize web worker
-        const newWorker = new Worker(new URL('@/lib/searchWorker.js', import.meta.url));
+        const newWorker = new Worker(new URL('@/lib/search.js', import.meta.url));
         setWorker(newWorker);
 
         return () => {
